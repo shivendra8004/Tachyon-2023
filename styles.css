@@ -64,16 +64,64 @@ div a img{
 
 
 /* events section*/
-
-
-#events{
-    height: 500px;
-    width: 100;
-    background-color: yellow;
+#eventheading{
     text-align: center;
 }
 
+.events{
+    margin-top: 2rem;
+    height: 1000px;
+    display: flex;
+    gap: 2rem;
+}
 
+.maincontainer{
+    position: relative;
+    height: 320px;
+    width: 250px;
+}
+
+.thecard:hover{
+    transform: rotateY(180deg);
+}
+
+.thecard{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+
+.thefront{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: #ffc728;
+    color: #333;
+    text-align: center;
+    font-family: 'zilla slab',sans-serif;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.theback{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: #5fcf80;
+    color: #fff;
+    transform: rotateY(180deg);
+    text-align: center;
+    font-family: 'zilla slab',sans-serif;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
 /* faq section*/
 
 
