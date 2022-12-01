@@ -32,21 +32,36 @@
 
 
 /* events section*/
+
+.timebox{
+    background-color: green;
+
+    height: 100px;
+    width: 500px;
+    margin: auto 8rem;
+}
+
+.row {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
 #eventheading{
     text-align: center;
 }
 
 .events{
     margin-top: 2rem;
-    height: 1000px;
-    display: flex;
-    gap: 2rem;
+
 }
 
 .maincontainer{
     position: relative;
-    height: 320px;
-    width: 250px;
+    height: 300px;
+    width: 700px;
+    margin: 2rem;
 }
 
 .thecard:hover{
