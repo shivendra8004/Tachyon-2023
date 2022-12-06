@@ -119,6 +119,33 @@ html {
     -webkit-text-fill-color: transparent;
 }
 
+@media screen and (max-width: 680px) {
+    #title .header {
+        font-size: 50px;
+    }
+
+    #title .subheader {
+        font-size: 25px;
+    }
+
+    #title .year {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #title .header {
+        font-size: 30px;
+    }
+
+    #title .subheader {
+        font-size: 15px;
+    }
+
+    #title .year {
+        font-size: 10px;
+    }
+}
 
 .hero {
     /* font-size: clamp(40px, 10vw, 100px); */
