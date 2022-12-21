@@ -4,6 +4,44 @@ html {
     overflow: hidden;
 }
 
+/* 
++++++++++++++++++++++++++++++++++++++++ utils.css Code Starts++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+
+@font-face {
+    font-family: moondance;
+    src: url(../assets/fonts/moondance/Moondance.otf) format("opentype");
+}
+
+@font-face {
+    font-family: andromeda;
+    src: url(../assets/fonts/andromeda-font/Andromeda-eR2n.ttf) format("opentype");
+}
+
+@font-face {
+    font-family: entanglement;
+    src: url(../assets/fonts/entanglement-font/Entanglement-rgpRB.ttf) format("opentype");
+}
+
+@font-face {
+    font-family: ledlight;
+    src: url(../assets/fonts/ledlight/LEDLIGHT.otf) format("opentype");
+}
+
+@font-face {
+    font-family: omega;
+    src: url(../assets/fonts/omega-centauri-font/Omegacentauri-Eaapj.ttf) format("opentype");
+}
+
+@font-face {
+    font-family: spacemaverick;
+    src: url(../assets/fonts/space_mavericks/Space\ Mavericks.otf) format("opentype");
+}
+
+/* 
++++++++++++++++++++++++++++++++++++++++ utils.css Code Ends++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+
 #stars {
     width: 1px;
     height: 1px;
@@ -139,20 +177,16 @@ html {
     }
 
     #title .year {
-        font-size: 10px;
+        font-size: 8px;
+        letter-spacing: 5px;
     }
 }
 
 .hero {
-    /* font-size: clamp(40px, 10vw, 100px); */
-    /* line-height: 1; */
     display: inline-block;
     color: #fff;
     z-index: 2;
     letter-spacing: 10px;
-
-    /* Bright things in dark environments usually cast that light, giving off a glow */
-    /* filter: drop-shadow(0 1px 3px); */
 }
 
 .layers::before,
@@ -441,12 +475,10 @@ html {
 
 .glitch::before {
     animation: paths 5s step-end infinite, glow 6s cubic-bezier(.29, 1.11, .01, .9) infinite alternate;
-
 }
 
 .glitch::after {
     animation: paths 5s step-end infinite, glow 6s cubic-bezier(.29, 1.11, .01, .9) infinite alternate;
-
 }
 
 .glitch2 span {
@@ -455,10 +487,8 @@ html {
 
 .glitch2::before {
     animation: paths 1s step-end infinite, glow 5s infinite alternate;
-
 }
 
 .glitch2::after {
     animation: paths 1s step-end infinite, glow 3s infinite alternate;
-
 }
