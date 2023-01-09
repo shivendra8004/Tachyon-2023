@@ -1110,8 +1110,14 @@ nav {
   padding: 8px;
 }
 
-.title,
-.price {
+.title{
+  color: #0d1419;
+  font-size: 1.5em;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 6px;
+}
+.price{
   color: #0d1419;
   font-size: 1.5em;
   font-weight: bold;
