@@ -1051,115 +1051,144 @@ nav {
 .event-heading {
   text-align: center;
   font-size: 70px;
+  margin-bottom: 4rem;
   font-family: "moondance";
   background: -webkit-linear-gradient(white, #38495a);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.events {
+.item-container {
+  border-radius: 10px;
+  position: relative;
+  margin: 24px;
+  width: 320px;
+  height: 570px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.img-container,
+.body-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.img-container img {
+  width: 100%;
+}
+
+.body-container {
+  position: relative;
+}
+
+.overlay {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-color: rgba(24, 83, 122, 0.3);
+  opacity: 0;
+  transition: height linear 0.4s, opacity linear 0.2s;
+}
+
+.item-container:hover .overlay {
+  opacity: 1;
+  height: 150px;
+}
+
+.event-info {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+}
+
+.title,
+.price {
+  color: #0d1419;
+  font-size: 1.5em;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 12px;
+}
+
+.info {
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+  color: black;
+}
+
+.separator {
+  width: 20%;
+  height: 6px;
+  background-color: #0d1419;
+  margin-bottom: 16px;
+}
+
+.additional-info {
+  border-top: 1px solid #bbb;
+  margin-top: 12px;
+  padding: 28px;
+  padding-bottom: 0;
+}
+
+.additional-info .info {
+  font-size: 0.9em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.info i {
+  color: #0d1419;
+  font-size: 1.1em;
+  margin-right: 4px;
+}
+
+.info span {
+  color: #0d1419;
+  font-weight: bolder;
+}
+
+.action {
+  color: #fff;
+  border: 3px solid #fff;
+  background-color: transparent;
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  outline: none;
+  cursor: pointer;
+  padding: 12px;
+  text-transform: uppercase;
+  font-size: 1.3em;
+  font-weight: bold;
+  letter-spacing: 2px;
+  transition: background-color 0.4s, top 0.4s;
+}
+
+.item-container:hover .action {
+  top: 50px;
+}
+
+.action:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.events{
   width: 80%;
   margin: 0 auto;
 }
-.row1,
-.row2,
-.row3 {
+.row1,.row2{
   display: flex;
-  justify-content: center;
-  margin-top: 4rem;
 }
-.row1 {
-  gap: 1rem;
-}
-.row2 {
-  gap: 2rem;
-  margin-top: 2rem;
-}
-.row3 {
-  gap: 4rem;
-  margin-top: 3rem;
-}
-.event {
-  text-align: justify;
-  height: 40vh;
-  width: 30vh;
-  padding: 0 0.8rem;
-  border: 1px solid #fff;
-  font-family: "andromeda";
-  background-color: rgba(9, 10, 20);
-}
-.event span {
-  display: block;
-  margin: 10px 0;
-}
-
-.event-title {
-  text-align: center;
-}
-.description {
-  font-size: 16px;
-}
-.event1-btn {
-  position: absolute;
-  top: 154vh;
-  left: 20vw;
-}
-.event2-btn {
-  position: absolute;
-  top: 154vh;
-  left: 38.4vw;
-}
-.event3-btn {
-  position: absolute;
-  top: 154vh;
-  left: 55.8vw;
-}
-.event4-btn {
-  position: absolute;
-  top: 154vh;
-  left: 73.4vw;
-}
-.event5-btn {
-  position: absolute;
-  top: 198.5vh;
-  left: 18.2vw;
-}
-.event6-btn {
-  position: absolute;
-  top: 198.5vh;
-  left: 37vw;
-}
-.event7-btn {
-  position: absolute;
-  top: 198.5vh;
-  left: 56.3vw;
-}
-.event8-btn {
-  position: absolute;
-  top: 198.5vh;
-  left: 74.9vw;
-}
-.event9-btn {
-  position: absolute;
-  top: 245.5vh;
-  left: 15.5vw;
-}
-.event10-btn {
-  position: absolute;
-  top: 245.5vh;
-  left: 36.3vw;
-}
-.event11-btn {
-  position: absolute;
-  top: 245.5vh;
-  left: 57.3vw;
-}
-.event12-btn {
-  position: absolute;
-  top: 245.5vh;
-  left: 77.8vw;
-}
-
 
 
 /*----------------------------------------------faq------------------------------*/
