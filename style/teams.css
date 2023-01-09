@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 body {
+    height: fit-content;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
 }
@@ -10,13 +11,14 @@ body {
 }
 
 .team-section {
-    min-height: 100vh;
+    max-height: 200vh;
     padding: 70px 15px 30px;
 }
 
 .container {
     max-width: 1400PX;
     margin: auto;
+    background-color: transparent;
 }
 
 .row {

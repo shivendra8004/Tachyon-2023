@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 html {
-  height: 400%;
+  height: 450%;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
 }
 
@@ -7,6 +9,11 @@ body {
   margin: 0;
   padding: 0;
   color: #fff;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+body::-webkit-scrollbar {
+  display: none;
 }
 a {
   text-decoration: none;
@@ -674,6 +681,15 @@ a {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.aboutUs{
+  font-size: 2rem;
+  text-align: center;
+  width: 90%;
+  margin:  0 auto;
+  margin-bottom: 7rem;
+  word-spacing: 30px;
+  
+}
 @keyframes paths {
   0% {
     clip-path: polygon(
@@ -1151,6 +1167,7 @@ nav {
 
 
 .faq-heading {
+  margin-top: 100px;
   text-align: center;
   font-size: 70px;
   font-family: "moondance";
@@ -1164,4 +1181,24 @@ nav {
   width: 80%;
   margin: 0 auto;
   height: 20%;
+}
+
+
+
+
+
+.contact-us{
+  margin-top: 100px;
+  text-align: center;
+  font-size: 70px;
+  font-family: "moondance";
+  background: -webkit-linear-gradient(white, #38495a);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+a{
+  color: #c5c5c5;
 }
