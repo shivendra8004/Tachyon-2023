@@ -1143,3 +1143,25 @@ nav {
   top: 245.5vh;
   left: 77.8vw;
 }
+
+
+
+/*----------------------------------------------faq------------------------------*/
+
+
+
+.faq-heading {
+  text-align: center;
+  font-size: 70px;
+  font-family: "moondance";
+  background: -webkit-linear-gradient(white, #38495a);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.faq {
+  width: 80%;
+  margin: 0 auto;
+  height: 20%;
+}

@@ -10,7 +10,6 @@ body {
 }
 
 .team-section {
-    background-color: #009655;
     min-height: 100vh;
     padding: 70px 15px 30px;
 }
@@ -32,11 +31,13 @@ body {
 }
 
 .team-section .section-title h1 {
-    font-size: 40px;
     text-align: center;
-    margin: 0;
-    color: #ffffff;
-    font-weight: 700;
+  font-size: 70px;
+  font-family: "moondance";
+  background: -webkit-linear-gradient(white, #38495a);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .team-section .section-title p {
